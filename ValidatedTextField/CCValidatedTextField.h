@@ -40,7 +40,7 @@ typedef BOOL(^ShouldReturnBlock)();
 /*
  Setting this method will trigger a postValidationBlock call, if set
  */
-@property BOOL valid;
+@property (nonatomic) BOOL valid;
 
 
 @end
