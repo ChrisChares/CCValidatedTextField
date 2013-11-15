@@ -32,4 +32,6 @@ CCValidatedTextField also exposes the rest of UITextFieldDelegate's methods as b
     @property (strong, nonatomic) ShouldReturnBlock shouldReturnBlock;
 
 ##Installation##
-Cocoapods - in the process of adding a podspec
+Cocoapods
+
+    pod 'CCValidatedTextField', '~> 1.0.1'
