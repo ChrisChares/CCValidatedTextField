@@ -7,14 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ValidatedTextField.h"
+#import "CCValidatedTextField.h"
 
 @interface ViewController : UIViewController
 
 
-@property (weak, nonatomic) IBOutlet ValidatedTextField *emailField;
-@property (weak, nonatomic) IBOutlet ValidatedTextField *lengthField;
-@property (weak, nonatomic) IBOutlet ValidatedTextField *numberField;
+@property (weak, nonatomic) IBOutlet CCValidatedTextField *emailField;
+@property (weak, nonatomic) IBOutlet CCValidatedTextField *lengthField;
+@property (weak, nonatomic) IBOutlet CCValidatedTextField *numberField;
 
 
 - (IBAction)submit:(id)sender;

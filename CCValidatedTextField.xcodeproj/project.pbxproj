@@ -11,10 +11,10 @@
 		8365E6F818358BF9005CC386 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8365E6F718358BF9005CC386 /* XCTest.framework */; };
 		8365E6F918358BF9005CC386 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8365E6E918358BF9005CC386 /* Foundation.framework */; };
 		8365E6FB18358BF9005CC386 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8365E6FA18358BF9005CC386 /* UIKit.framework */; };
-		8365E6FE18358BF9005CC386 /* libValidatedTextField.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8365E6E618358BF9005CC386 /* libValidatedTextField.a */; };
+		8365E6FE18358BF9005CC386 /* libCCValidatedTextField.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8365E6E618358BF9005CC386 /* libCCValidatedTextField.a */; };
 		8365E70418358BF9005CC386 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8365E70218358BF9005CC386 /* InfoPlist.strings */; };
 		8365E70618358BF9005CC386 /* ValidatedTextFieldTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8365E70518358BF9005CC386 /* ValidatedTextFieldTests.m */; };
-		8365E71118358C1D005CC386 /* ValidatedTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 8365E71018358C1D005CC386 /* ValidatedTextField.m */; };
+		8365E71118358C1D005CC386 /* CCValidatedTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 8365E71018358C1D005CC386 /* CCValidatedTextField.m */; };
 		8365E71718359341005CC386 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8365E6E918358BF9005CC386 /* Foundation.framework */; };
 		8365E71918359341005CC386 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8365E71818359341005CC386 /* CoreGraphics.framework */; };
 		8365E71A18359341005CC386 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8365E6FA18358BF9005CC386 /* UIKit.framework */; };
@@ -24,8 +24,8 @@
 		8365E72918359341005CC386 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8365E72718359341005CC386 /* Main.storyboard */; };
 		8365E72C18359341005CC386 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8365E72B18359341005CC386 /* ViewController.m */; };
 		8365E72E18359341005CC386 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8365E72D18359341005CC386 /* Images.xcassets */; };
-		8365E749183597DB005CC386 /* libValidatedTextField.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8365E6E618358BF9005CC386 /* libValidatedTextField.a */; };
-		8365E74A1835985F005CC386 /* ValidatedTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 8365E71018358C1D005CC386 /* ValidatedTextField.m */; };
+		8365E749183597DB005CC386 /* libCCValidatedTextField.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8365E6E618358BF9005CC386 /* libCCValidatedTextField.a */; };
+		8365E74A1835985F005CC386 /* CCValidatedTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 8365E71018358C1D005CC386 /* CCValidatedTextField.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,23 +58,23 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		8365E6E618358BF9005CC386 /* libValidatedTextField.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libValidatedTextField.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8365E6E618358BF9005CC386 /* libCCValidatedTextField.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCCValidatedTextField.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		8365E6E918358BF9005CC386 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		8365E6ED18358BF9005CC386 /* ValidatedTextField-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ValidatedTextField-Prefix.pch"; sourceTree = "<group>"; };
-		8365E6F618358BF9005CC386 /* ValidatedTextFieldTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ValidatedTextFieldTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8365E6ED18358BF9005CC386 /* CCValidatedTextField-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CCValidatedTextField-Prefix.pch"; sourceTree = "<group>"; };
+		8365E6F618358BF9005CC386 /* CCValidatedTextFieldTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CCValidatedTextFieldTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8365E6F718358BF9005CC386 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		8365E6FA18358BF9005CC386 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		8365E70118358BF9005CC386 /* ValidatedTextFieldTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ValidatedTextFieldTests-Info.plist"; sourceTree = "<group>"; };
+		8365E70118358BF9005CC386 /* CCValidatedTextFieldTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CCValidatedTextFieldTests-Info.plist"; sourceTree = "<group>"; };
 		8365E70318358BF9005CC386 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8365E70518358BF9005CC386 /* ValidatedTextFieldTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ValidatedTextFieldTests.m; sourceTree = "<group>"; };
-		8365E70F18358C1D005CC386 /* ValidatedTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ValidatedTextField.h; sourceTree = "<group>"; };
-		8365E71018358C1D005CC386 /* ValidatedTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ValidatedTextField.m; sourceTree = "<group>"; };
-		8365E71618359341005CC386 /* ValidatedTextFieldDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ValidatedTextFieldDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8365E70F18358C1D005CC386 /* CCValidatedTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCValidatedTextField.h; sourceTree = "<group>"; };
+		8365E71018358C1D005CC386 /* CCValidatedTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCValidatedTextField.m; sourceTree = "<group>"; };
+		8365E71618359341005CC386 /* CCValidatedTextFieldDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CCValidatedTextFieldDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8365E71818359341005CC386 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		8365E71D18359341005CC386 /* ValidatedTextFieldDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ValidatedTextFieldDemo-Info.plist"; sourceTree = "<group>"; };
+		8365E71D18359341005CC386 /* CCValidatedTextFieldDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CCValidatedTextFieldDemo-Info.plist"; sourceTree = "<group>"; };
 		8365E71F18359341005CC386 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8365E72118359341005CC386 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		8365E72318359341005CC386 /* ValidatedTextFieldDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ValidatedTextFieldDemo-Prefix.pch"; sourceTree = "<group>"; };
+		8365E72318359341005CC386 /* CCValidatedTextFieldDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CCValidatedTextFieldDemo-Prefix.pch"; sourceTree = "<group>"; };
 		8365E72418359341005CC386 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8365E72518359341005CC386 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		8365E72818359341005CC386 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -96,7 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8365E6FE18358BF9005CC386 /* libValidatedTextField.a in Frameworks */,
+				8365E6FE18358BF9005CC386 /* libCCValidatedTextField.a in Frameworks */,
 				8365E6F818358BF9005CC386 /* XCTest.framework in Frameworks */,
 				8365E6FB18358BF9005CC386 /* UIKit.framework in Frameworks */,
 				8365E6F918358BF9005CC386 /* Foundation.framework in Frameworks */,
@@ -107,7 +107,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8365E749183597DB005CC386 /* libValidatedTextField.a in Frameworks */,
+				8365E749183597DB005CC386 /* libCCValidatedTextField.a in Frameworks */,
 				8365E71918359341005CC386 /* CoreGraphics.framework in Frameworks */,
 				8365E71A18359341005CC386 /* UIKit.framework in Frameworks */,
 				8365E71718359341005CC386 /* Foundation.framework in Frameworks */,
@@ -131,9 +131,9 @@
 		8365E6E718358BF9005CC386 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8365E6E618358BF9005CC386 /* libValidatedTextField.a */,
-				8365E6F618358BF9005CC386 /* ValidatedTextFieldTests.xctest */,
-				8365E71618359341005CC386 /* ValidatedTextFieldDemo.app */,
+				8365E6E618358BF9005CC386 /* libCCValidatedTextField.a */,
+				8365E6F618358BF9005CC386 /* CCValidatedTextFieldTests.xctest */,
+				8365E71618359341005CC386 /* CCValidatedTextFieldDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -152,8 +152,8 @@
 		8365E6EB18358BF9005CC386 /* ValidatedTextField */ = {
 			isa = PBXGroup;
 			children = (
-				8365E70F18358C1D005CC386 /* ValidatedTextField.h */,
-				8365E71018358C1D005CC386 /* ValidatedTextField.m */,
+				8365E70F18358C1D005CC386 /* CCValidatedTextField.h */,
+				8365E71018358C1D005CC386 /* CCValidatedTextField.m */,
 				8365E6EC18358BF9005CC386 /* Supporting Files */,
 			);
 			path = ValidatedTextField;
@@ -162,7 +162,7 @@
 		8365E6EC18358BF9005CC386 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				8365E6ED18358BF9005CC386 /* ValidatedTextField-Prefix.pch */,
+				8365E6ED18358BF9005CC386 /* CCValidatedTextField-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -179,7 +179,7 @@
 		8365E70018358BF9005CC386 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				8365E70118358BF9005CC386 /* ValidatedTextFieldTests-Info.plist */,
+				8365E70118358BF9005CC386 /* CCValidatedTextFieldTests-Info.plist */,
 				8365E70218358BF9005CC386 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -202,10 +202,10 @@
 		8365E71C18359341005CC386 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				8365E71D18359341005CC386 /* ValidatedTextFieldDemo-Info.plist */,
+				8365E71D18359341005CC386 /* CCValidatedTextFieldDemo-Info.plist */,
 				8365E71E18359341005CC386 /* InfoPlist.strings */,
 				8365E72118359341005CC386 /* main.m */,
-				8365E72318359341005CC386 /* ValidatedTextFieldDemo-Prefix.pch */,
+				8365E72318359341005CC386 /* CCValidatedTextFieldDemo-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -213,9 +213,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8365E6E518358BF9005CC386 /* ValidatedTextField */ = {
+		8365E6E518358BF9005CC386 /* CCValidatedTextField */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8365E70918358BF9005CC386 /* Build configuration list for PBXNativeTarget "ValidatedTextField" */;
+			buildConfigurationList = 8365E70918358BF9005CC386 /* Build configuration list for PBXNativeTarget "CCValidatedTextField" */;
 			buildPhases = (
 				8365E6E218358BF9005CC386 /* Sources */,
 				8365E6E318358BF9005CC386 /* Frameworks */,
@@ -225,14 +225,14 @@
 			);
 			dependencies = (
 			);
-			name = ValidatedTextField;
+			name = CCValidatedTextField;
 			productName = ValidatedTextField;
-			productReference = 8365E6E618358BF9005CC386 /* libValidatedTextField.a */;
+			productReference = 8365E6E618358BF9005CC386 /* libCCValidatedTextField.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		8365E6F518358BF9005CC386 /* ValidatedTextFieldTests */ = {
+		8365E6F518358BF9005CC386 /* CCValidatedTextFieldTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8365E70C18358BF9005CC386 /* Build configuration list for PBXNativeTarget "ValidatedTextFieldTests" */;
+			buildConfigurationList = 8365E70C18358BF9005CC386 /* Build configuration list for PBXNativeTarget "CCValidatedTextFieldTests" */;
 			buildPhases = (
 				8365E6F218358BF9005CC386 /* Sources */,
 				8365E6F318358BF9005CC386 /* Frameworks */,
@@ -243,14 +243,14 @@
 			dependencies = (
 				8365E6FD18358BF9005CC386 /* PBXTargetDependency */,
 			);
-			name = ValidatedTextFieldTests;
+			name = CCValidatedTextFieldTests;
 			productName = ValidatedTextFieldTests;
-			productReference = 8365E6F618358BF9005CC386 /* ValidatedTextFieldTests.xctest */;
+			productReference = 8365E6F618358BF9005CC386 /* CCValidatedTextFieldTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		8365E71518359341005CC386 /* ValidatedTextFieldDemo */ = {
+		8365E71518359341005CC386 /* CCValidatedTextFieldDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8365E74118359341005CC386 /* Build configuration list for PBXNativeTarget "ValidatedTextFieldDemo" */;
+			buildConfigurationList = 8365E74118359341005CC386 /* Build configuration list for PBXNativeTarget "CCValidatedTextFieldDemo" */;
 			buildPhases = (
 				8365E71218359341005CC386 /* Sources */,
 				8365E71318359341005CC386 /* Frameworks */,
@@ -261,9 +261,9 @@
 			dependencies = (
 				8365E74818359431005CC386 /* PBXTargetDependency */,
 			);
-			name = ValidatedTextFieldDemo;
+			name = CCValidatedTextFieldDemo;
 			productName = ValidatedTextFieldDemo;
-			productReference = 8365E71618359341005CC386 /* ValidatedTextFieldDemo.app */;
+			productReference = 8365E71618359341005CC386 /* CCValidatedTextFieldDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -280,7 +280,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 8365E6E118358BF9005CC386 /* Build configuration list for PBXProject "ValidatedTextField" */;
+			buildConfigurationList = 8365E6E118358BF9005CC386 /* Build configuration list for PBXProject "CCValidatedTextField" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -293,9 +293,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8365E6E518358BF9005CC386 /* ValidatedTextField */,
-				8365E6F518358BF9005CC386 /* ValidatedTextFieldTests */,
-				8365E71518359341005CC386 /* ValidatedTextFieldDemo */,
+				8365E6E518358BF9005CC386 /* CCValidatedTextField */,
+				8365E6F518358BF9005CC386 /* CCValidatedTextFieldTests */,
+				8365E71518359341005CC386 /* CCValidatedTextFieldDemo */,
 			);
 		};
 /* End PBXProject section */
@@ -326,7 +326,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8365E71118358C1D005CC386 /* ValidatedTextField.m in Sources */,
+				8365E71118358C1D005CC386 /* CCValidatedTextField.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,7 +344,7 @@
 			files = (
 				8365E72C18359341005CC386 /* ViewController.m in Sources */,
 				8365E72618359341005CC386 /* AppDelegate.m in Sources */,
-				8365E74A1835985F005CC386 /* ValidatedTextField.m in Sources */,
+				8365E74A1835985F005CC386 /* CCValidatedTextField.m in Sources */,
 				8365E72218359341005CC386 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -354,12 +354,12 @@
 /* Begin PBXTargetDependency section */
 		8365E6FD18358BF9005CC386 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 8365E6E518358BF9005CC386 /* ValidatedTextField */;
+			target = 8365E6E518358BF9005CC386 /* CCValidatedTextField */;
 			targetProxy = 8365E6FC18358BF9005CC386 /* PBXContainerItemProxy */;
 		};
 		8365E74818359431005CC386 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 8365E6E518358BF9005CC386 /* ValidatedTextField */;
+			target = 8365E6E518358BF9005CC386 /* CCValidatedTextField */;
 			targetProxy = 8365E74718359431005CC386 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -467,9 +467,9 @@
 			buildSettings = {
 				DSTROOT = /tmp/ValidatedTextField.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ValidatedTextField/ValidatedTextField-Prefix.pch";
+				GCC_PREFIX_HEADER = "ValidatedTextField/CCValidatedTextField-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = CCValidatedTextField;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -479,9 +479,9 @@
 			buildSettings = {
 				DSTROOT = /tmp/ValidatedTextField.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ValidatedTextField/ValidatedTextField-Prefix.pch";
+				GCC_PREFIX_HEADER = "ValidatedTextField/CCValidatedTextField-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = CCValidatedTextField;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -502,8 +502,8 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "ValidatedTextFieldTests/ValidatedTextFieldTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "ValidatedTextFieldTests/CCValidatedTextFieldTests-Info.plist";
+				PRODUCT_NAME = CCValidatedTextFieldTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -521,8 +521,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ValidatedTextField/ValidatedTextField-Prefix.pch";
-				INFOPLIST_FILE = "ValidatedTextFieldTests/ValidatedTextFieldTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "ValidatedTextFieldTests/CCValidatedTextFieldTests-Info.plist";
+				PRODUCT_NAME = CCValidatedTextFieldTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -540,13 +540,13 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ValidatedTextFieldDemo/ValidatedTextFieldDemo-Prefix.pch";
+				GCC_PREFIX_HEADER = "ValidatedTextFieldDemo/CCValidatedTextFieldDemo-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "ValidatedTextFieldDemo/ValidatedTextFieldDemo-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "ValidatedTextFieldDemo/CCValidatedTextFieldDemo-Info.plist";
+				PRODUCT_NAME = CCValidatedTextFieldDemo;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -563,9 +563,9 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ValidatedTextFieldDemo/ValidatedTextFieldDemo-Prefix.pch";
-				INFOPLIST_FILE = "ValidatedTextFieldDemo/ValidatedTextFieldDemo-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "ValidatedTextFieldDemo/CCValidatedTextFieldDemo-Prefix.pch";
+				INFOPLIST_FILE = "ValidatedTextFieldDemo/CCValidatedTextFieldDemo-Info.plist";
+				PRODUCT_NAME = CCValidatedTextFieldDemo;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -573,7 +573,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8365E6E118358BF9005CC386 /* Build configuration list for PBXProject "ValidatedTextField" */ = {
+		8365E6E118358BF9005CC386 /* Build configuration list for PBXProject "CCValidatedTextField" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8365E70718358BF9005CC386 /* Debug */,
@@ -582,29 +582,32 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8365E70918358BF9005CC386 /* Build configuration list for PBXNativeTarget "ValidatedTextField" */ = {
+		8365E70918358BF9005CC386 /* Build configuration list for PBXNativeTarget "CCValidatedTextField" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8365E70A18358BF9005CC386 /* Debug */,
 				8365E70B18358BF9005CC386 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		8365E70C18358BF9005CC386 /* Build configuration list for PBXNativeTarget "ValidatedTextFieldTests" */ = {
+		8365E70C18358BF9005CC386 /* Build configuration list for PBXNativeTarget "CCValidatedTextFieldTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8365E70D18358BF9005CC386 /* Debug */,
 				8365E70E18358BF9005CC386 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		8365E74118359341005CC386 /* Build configuration list for PBXNativeTarget "ValidatedTextFieldDemo" */ = {
+		8365E74118359341005CC386 /* Build configuration list for PBXNativeTarget "CCValidatedTextFieldDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8365E74218359341005CC386 /* Debug */,
 				8365E74318359341005CC386 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

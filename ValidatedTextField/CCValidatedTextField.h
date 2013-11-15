@@ -21,7 +21,7 @@ typedef BOOL(^DidEndEditingBlock)();
 typedef BOOL(^ShouldClearBlock)();
 typedef BOOL(^ShouldReturnBlock)();
 
-@interface ValidatedTextField : UITextField
+@interface CCValidatedTextField : UITextField
 
 /*
  Validation blocks, called in textField:ShouldChangeCharactersInRange:ReplacementString:

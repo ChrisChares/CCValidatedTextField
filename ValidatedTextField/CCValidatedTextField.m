@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 Eunoia Design Co. All rights reserved.
 //
 
-#import "ValidatedTextField.h"
+#import "CCValidatedTextField.h"
 
 
 /*
@@ -15,15 +15,15 @@
  Reference: http://www.cocoabuilder.com/archive/cocoa/241465-iphone-why-can-a-uitextfield-be-its-own-delegate.html#241505
  */
 @interface DelegateRouter : NSObject<UITextFieldDelegate>
-@property ValidatedTextField *textField;
-- (id)initWithValidatingTextField:(ValidatedTextField *)textField;
+@property CCValidatedTextField *textField;
+- (id)initWithValidatingTextField:(CCValidatedTextField *)textField;
 @end
 
-@interface ValidatedTextField()
+@interface CCValidatedTextField()
 @property (strong, nonatomic) DelegateRouter *delegateRouter;
 @end
 
-@implementation ValidatedTextField
+@implementation CCValidatedTextField
 @synthesize valid = _valid;
 
 - (id)initWithFrame:(CGRect)frame
@@ -151,7 +151,7 @@
         return YES;
     }
 }
-- (id)initWithValidatingTextField:(ValidatedTextField *)textField
+- (id)initWithValidatingTextField:(CCValidatedTextField *)textField
 {
     self = [super init];
     _textField = textField;

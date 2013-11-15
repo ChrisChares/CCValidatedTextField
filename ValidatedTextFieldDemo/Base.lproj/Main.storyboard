@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email field" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lwa-5S-6tt" customClass="ValidatedTextField">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email field" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lwa-5S-6tt" customClass="CCValidatedTextField">
                                 <rect key="frame" x="20" y="84" width="220" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
@@ -25,7 +25,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="length validation" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gkY-pC-Faw" customClass="ValidatedTextField">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="length validation" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gkY-pC-Faw" customClass="CCValidatedTextField">
                                 <rect key="frame" x="20" y="122" width="220" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
@@ -34,7 +34,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="number validation" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ENr-UQ-cGn" customClass="ValidatedTextField">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="number validation" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ENr-UQ-cGn" customClass="CCValidatedTextField">
                                 <rect key="frame" x="20" y="160" width="220" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
