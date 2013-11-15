@@ -121,18 +121,20 @@
  */
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string
 {
-    if ( _textField.validationBlock != nil ) {
+    BOOL shouldChangeCharacters;
+    
+    if ( _textField.shouldChangeCharactersInRangeWithReplacementStringBlock ) {
+        shouldChangeCharacters  = _textField.shouldChangeCharactersInRangeWithReplacementStringBlock(range, string);
+    } else {
+        shouldChangeCharacters = YES;
+    }
+    if ( shouldChangeCharacters && _textField.validationBlock != nil ) {
         _textField.valid = _textField.validationBlock([_textField.text stringByReplacingCharactersInRange:range withString:string]);
         if ( _textField.postValidationBlock != nil ) {
             _textField.postValidationBlock(_textField.valid);
         }
     }
-    
-    if ( _textField.shouldChangeCharactersInRangeWithReplacementStringBlock ) {
-        return _textField.shouldChangeCharactersInRangeWithReplacementStringBlock(range, string);
-    } else {
-        return YES;
-    }
+    return shouldChangeCharacters;
 }
 - (BOOL)textFieldShouldClear:(UITextField *)textField
 {
