@@ -1,7 +1,7 @@
 CCValidatedTextField
 ====================
 
-Add custom validation to UITextField with blocks
+Add real-time validation to UITextField with blocks
 
 ![sample](http://i.imgur.com/Gy8Ylvs.gif)
 
