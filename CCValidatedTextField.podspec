@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
-  s.name         = 'CCValidatedTextView'
+  s.name         = 'CCValidatedTextField'
   s.version      = '1.0.0'
-  s.license      =  :type => 'BSD'
+  s.license      = 'BSD'
   s.homepage     = 'https://github.com/ChrisChares/CCValidatedTextField'
   s.summary      = 'Real-time UITextField validation via blocks'
   s.author = {
@@ -12,5 +12,6 @@ Pod::Spec.new do |s|
     :tag => '1.0.0'
   }
   s.source_files = 'ValidatedTextField/*.{h,m}'
+  s.platform     = :ios, '6.0'
   s.requires_arc = true
 end
