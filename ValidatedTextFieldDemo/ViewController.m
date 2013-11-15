@@ -23,15 +23,14 @@
      Email Validation
      */
     NSString *emailPattern = @"^[_a-z0-9-]+(\\.[_a-z0-9-]+)*@[a-z0-9-]+(\\.[a-z0-9-]+)*(\\.[a-z]{2,4})$";
-
     _emailField.validationBlock = ^(NSString *text) {
         return [self validateString:text withPattern:emailPattern];
     };
     _emailField.postValidationBlock = ^(BOOL valid){
         if ( valid ) {
-            _emailField.backgroundColor = [UIColor greenColor];
+            _emailStatus.image = [UIImage imageNamed:@"valid"];
         } else {
-            _emailField.backgroundColor = [UIColor redColor];
+            _emailStatus.image = [UIImage imageNamed:@"invalid"];
         }
     };
     

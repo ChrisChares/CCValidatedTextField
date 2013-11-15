@@ -13,7 +13,7 @@
                         <viewControllerLayoutGuide type="bottom" id="N7E-VO-fIR"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email field" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lwa-5S-6tt" customClass="CCValidatedTextField">
@@ -56,6 +56,10 @@
                                     <action selector="submit:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="yM7-Yb-PAF"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="invalid" translatesAutoresizingMaskIntoConstraints="NO" id="roF-FB-P5a">
+                                <rect key="frame" x="248" y="84" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -76,6 +80,7 @@
                     <navigationItem key="navigationItem" id="CdL-dT-pMD"/>
                     <connections>
                         <outlet property="emailField" destination="Lwa-5S-6tt" id="4HJ-fW-CaR"/>
+                        <outlet property="emailStatus" destination="roF-FB-P5a" id="L1p-EA-1Np"/>
                         <outlet property="lengthField" destination="gkY-pC-Faw" id="Ym5-Nw-3xe"/>
                         <outlet property="numberField" destination="ENr-UQ-cGn" id="dFo-bb-eq9"/>
                     </connections>
@@ -103,9 +108,12 @@
             <point key="canvasLocation" x="-69" y="340"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="invalid" width="48" height="48"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
+        <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
 </document>

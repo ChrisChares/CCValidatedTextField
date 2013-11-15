@@ -13,6 +13,8 @@
 
 
 @property (weak, nonatomic) IBOutlet CCValidatedTextField *emailField;
+@property (weak, nonatomic) IBOutlet UIImageView *emailStatus;
+
 @property (weak, nonatomic) IBOutlet CCValidatedTextField *lengthField;
 @property (weak, nonatomic) IBOutlet CCValidatedTextField *numberField;
 
