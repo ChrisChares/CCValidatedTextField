@@ -29,14 +29,6 @@ typedef BOOL(^ShouldReturnBlock)();
 @property (strong, nonatomic) ValidationBlock validationBlock;
 @property (strong, nonatomic) PostValidationBlock postValidationBlock;
 
-@property (strong, nonatomic) ShouldChangeCharactersInRangeWithReplacementStringBlock shouldChangeCharactersInRangeWithReplacementStringBlock;
-@property (strong, nonatomic) ShouldBeginEditingBlock shouldBeginEditingBlock;
-@property (strong, nonatomic) DidBeginEditingBlock didBeginEditingBlock;
-@property (strong, nonatomic) ShouldEndEditingBlock shouldEndEditingBlock;
-@property (strong, nonatomic) DidEndEditingBlock didEndEditingBlock;
-@property (strong, nonatomic) ShouldClearBlock shouldClearBlock;
-@property (strong, nonatomic) ShouldReturnBlock shouldReturnBlock;
-
 /*
  Setting this method will trigger a postValidationBlock call, if set
  */
