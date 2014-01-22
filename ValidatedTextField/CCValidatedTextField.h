@@ -14,6 +14,7 @@
 typedef BOOL(^ValidationBlock)(NSString *);
 typedef void(^PostValidationBlock)(BOOL);
 
+
 @interface CCValidatedTextField : UITextField
 
 /*
@@ -26,7 +27,6 @@ typedef void(^PostValidationBlock)(BOOL);
  Setting this method will trigger a postValidationBlock call, if set
  */
 @property (nonatomic) BOOL valid;
-
 
 /**
  * Revalidates the textfield against it's current text

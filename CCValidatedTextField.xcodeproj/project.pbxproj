@@ -1,0 +1,615 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8365E6EA18358BF9005CC386 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8365E6E918358BF9005CC386 /* Foundation.framework */; };
+		8365E6F818358BF9005CC386 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8365E6F718358BF9005CC386 /* XCTest.framework */; };
+		8365E6F918358BF9005CC386 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8365E6E918358BF9005CC386 /* Foundation.framework */; };
+		8365E6FB18358BF9005CC386 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8365E6FA18358BF9005CC386 /* UIKit.framework */; };
+		8365E6FE18358BF9005CC386 /* libCCValidatedTextField.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8365E6E618358BF9005CC386 /* libCCValidatedTextField.a */; };
+		8365E70418358BF9005CC386 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8365E70218358BF9005CC386 /* InfoPlist.strings */; };
+		8365E70618358BF9005CC386 /* ValidatedTextFieldTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8365E70518358BF9005CC386 /* ValidatedTextFieldTests.m */; };
+		8365E71118358C1D005CC386 /* CCValidatedTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 8365E71018358C1D005CC386 /* CCValidatedTextField.m */; };
+		8365E71718359341005CC386 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8365E6E918358BF9005CC386 /* Foundation.framework */; };
+		8365E71918359341005CC386 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8365E71818359341005CC386 /* CoreGraphics.framework */; };
+		8365E71A18359341005CC386 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8365E6FA18358BF9005CC386 /* UIKit.framework */; };
+		8365E72018359341005CC386 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8365E71E18359341005CC386 /* InfoPlist.strings */; };
+		8365E72218359341005CC386 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8365E72118359341005CC386 /* main.m */; };
+		8365E72618359341005CC386 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8365E72518359341005CC386 /* AppDelegate.m */; };
+		8365E72918359341005CC386 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8365E72718359341005CC386 /* Main.storyboard */; };
+		8365E72C18359341005CC386 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8365E72B18359341005CC386 /* ViewController.m */; };
+		8365E72E18359341005CC386 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8365E72D18359341005CC386 /* Images.xcassets */; };
+		8365E749183597DB005CC386 /* libCCValidatedTextField.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8365E6E618358BF9005CC386 /* libCCValidatedTextField.a */; };
+		8365E74A1835985F005CC386 /* CCValidatedTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 8365E71018358C1D005CC386 /* CCValidatedTextField.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8365E6FC18358BF9005CC386 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8365E6DE18358BF9005CC386 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8365E6E518358BF9005CC386;
+			remoteInfo = ValidatedTextField;
+		};
+		8365E74718359431005CC386 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8365E6DE18358BF9005CC386 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8365E6E518358BF9005CC386;
+			remoteInfo = ValidatedTextField;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8365E6E418358BF9005CC386 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8365E6E618358BF9005CC386 /* libCCValidatedTextField.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCCValidatedTextField.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8365E6E918358BF9005CC386 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8365E6ED18358BF9005CC386 /* CCValidatedTextField-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CCValidatedTextField-Prefix.pch"; sourceTree = "<group>"; };
+		8365E6F618358BF9005CC386 /* CCValidatedTextFieldTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CCValidatedTextFieldTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8365E6F718358BF9005CC386 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		8365E6FA18358BF9005CC386 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		8365E70118358BF9005CC386 /* CCValidatedTextFieldTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CCValidatedTextFieldTests-Info.plist"; sourceTree = "<group>"; };
+		8365E70318358BF9005CC386 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8365E70518358BF9005CC386 /* ValidatedTextFieldTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ValidatedTextFieldTests.m; sourceTree = "<group>"; };
+		8365E70F18358C1D005CC386 /* CCValidatedTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCValidatedTextField.h; sourceTree = "<group>"; };
+		8365E71018358C1D005CC386 /* CCValidatedTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCValidatedTextField.m; sourceTree = "<group>"; };
+		8365E71618359341005CC386 /* CCValidatedTextFieldDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CCValidatedTextFieldDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8365E71818359341005CC386 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8365E71D18359341005CC386 /* CCValidatedTextFieldDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CCValidatedTextFieldDemo-Info.plist"; sourceTree = "<group>"; };
+		8365E71F18359341005CC386 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8365E72118359341005CC386 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8365E72318359341005CC386 /* CCValidatedTextFieldDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CCValidatedTextFieldDemo-Prefix.pch"; sourceTree = "<group>"; };
+		8365E72418359341005CC386 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8365E72518359341005CC386 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8365E72818359341005CC386 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8365E72A18359341005CC386 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		8365E72B18359341005CC386 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8365E72D18359341005CC386 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8365E6E318358BF9005CC386 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8365E6EA18358BF9005CC386 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8365E6F318358BF9005CC386 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8365E6FE18358BF9005CC386 /* libCCValidatedTextField.a in Frameworks */,
+				8365E6F818358BF9005CC386 /* XCTest.framework in Frameworks */,
+				8365E6FB18358BF9005CC386 /* UIKit.framework in Frameworks */,
+				8365E6F918358BF9005CC386 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8365E71318359341005CC386 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8365E749183597DB005CC386 /* libCCValidatedTextField.a in Frameworks */,
+				8365E71918359341005CC386 /* CoreGraphics.framework in Frameworks */,
+				8365E71A18359341005CC386 /* UIKit.framework in Frameworks */,
+				8365E71718359341005CC386 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8365E6DD18358BF9005CC386 = {
+			isa = PBXGroup;
+			children = (
+				8365E6EB18358BF9005CC386 /* ValidatedTextField */,
+				8365E6FF18358BF9005CC386 /* ValidatedTextFieldTests */,
+				8365E71B18359341005CC386 /* ValidatedTextFieldDemo */,
+				8365E6E818358BF9005CC386 /* Frameworks */,
+				8365E6E718358BF9005CC386 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8365E6E718358BF9005CC386 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8365E6E618358BF9005CC386 /* libCCValidatedTextField.a */,
+				8365E6F618358BF9005CC386 /* CCValidatedTextFieldTests.xctest */,
+				8365E71618359341005CC386 /* CCValidatedTextFieldDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8365E6E818358BF9005CC386 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8365E6E918358BF9005CC386 /* Foundation.framework */,
+				8365E6F718358BF9005CC386 /* XCTest.framework */,
+				8365E6FA18358BF9005CC386 /* UIKit.framework */,
+				8365E71818359341005CC386 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8365E6EB18358BF9005CC386 /* ValidatedTextField */ = {
+			isa = PBXGroup;
+			children = (
+				8365E70F18358C1D005CC386 /* CCValidatedTextField.h */,
+				8365E71018358C1D005CC386 /* CCValidatedTextField.m */,
+				8365E6EC18358BF9005CC386 /* Supporting Files */,
+			);
+			path = ValidatedTextField;
+			sourceTree = "<group>";
+		};
+		8365E6EC18358BF9005CC386 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8365E6ED18358BF9005CC386 /* CCValidatedTextField-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8365E6FF18358BF9005CC386 /* ValidatedTextFieldTests */ = {
+			isa = PBXGroup;
+			children = (
+				8365E70518358BF9005CC386 /* ValidatedTextFieldTests.m */,
+				8365E70018358BF9005CC386 /* Supporting Files */,
+			);
+			path = ValidatedTextFieldTests;
+			sourceTree = "<group>";
+		};
+		8365E70018358BF9005CC386 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8365E70118358BF9005CC386 /* CCValidatedTextFieldTests-Info.plist */,
+				8365E70218358BF9005CC386 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8365E71B18359341005CC386 /* ValidatedTextFieldDemo */ = {
+			isa = PBXGroup;
+			children = (
+				8365E72418359341005CC386 /* AppDelegate.h */,
+				8365E72518359341005CC386 /* AppDelegate.m */,
+				8365E72718359341005CC386 /* Main.storyboard */,
+				8365E72A18359341005CC386 /* ViewController.h */,
+				8365E72B18359341005CC386 /* ViewController.m */,
+				8365E72D18359341005CC386 /* Images.xcassets */,
+				8365E71C18359341005CC386 /* Supporting Files */,
+			);
+			path = ValidatedTextFieldDemo;
+			sourceTree = "<group>";
+		};
+		8365E71C18359341005CC386 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8365E71D18359341005CC386 /* CCValidatedTextFieldDemo-Info.plist */,
+				8365E71E18359341005CC386 /* InfoPlist.strings */,
+				8365E72118359341005CC386 /* main.m */,
+				8365E72318359341005CC386 /* CCValidatedTextFieldDemo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8365E6E518358BF9005CC386 /* CCValidatedTextField */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8365E70918358BF9005CC386 /* Build configuration list for PBXNativeTarget "CCValidatedTextField" */;
+			buildPhases = (
+				8365E6E218358BF9005CC386 /* Sources */,
+				8365E6E318358BF9005CC386 /* Frameworks */,
+				8365E6E418358BF9005CC386 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CCValidatedTextField;
+			productName = ValidatedTextField;
+			productReference = 8365E6E618358BF9005CC386 /* libCCValidatedTextField.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		8365E6F518358BF9005CC386 /* CCValidatedTextFieldTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8365E70C18358BF9005CC386 /* Build configuration list for PBXNativeTarget "CCValidatedTextFieldTests" */;
+			buildPhases = (
+				8365E6F218358BF9005CC386 /* Sources */,
+				8365E6F318358BF9005CC386 /* Frameworks */,
+				8365E6F418358BF9005CC386 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8365E6FD18358BF9005CC386 /* PBXTargetDependency */,
+			);
+			name = CCValidatedTextFieldTests;
+			productName = ValidatedTextFieldTests;
+			productReference = 8365E6F618358BF9005CC386 /* CCValidatedTextFieldTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8365E71518359341005CC386 /* CCValidatedTextFieldDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8365E74118359341005CC386 /* Build configuration list for PBXNativeTarget "CCValidatedTextFieldDemo" */;
+			buildPhases = (
+				8365E71218359341005CC386 /* Sources */,
+				8365E71318359341005CC386 /* Frameworks */,
+				8365E71418359341005CC386 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8365E74818359431005CC386 /* PBXTargetDependency */,
+			);
+			name = CCValidatedTextFieldDemo;
+			productName = ValidatedTextFieldDemo;
+			productReference = 8365E71618359341005CC386 /* CCValidatedTextFieldDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8365E6DE18358BF9005CC386 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Eunoia Design Co";
+				TargetAttributes = {
+					8365E6F518358BF9005CC386 = {
+						TestTargetID = 8365E71518359341005CC386;
+					};
+				};
+			};
+			buildConfigurationList = 8365E6E118358BF9005CC386 /* Build configuration list for PBXProject "CCValidatedTextField" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8365E6DD18358BF9005CC386;
+			productRefGroup = 8365E6E718358BF9005CC386 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8365E6E518358BF9005CC386 /* CCValidatedTextField */,
+				8365E6F518358BF9005CC386 /* CCValidatedTextFieldTests */,
+				8365E71518359341005CC386 /* CCValidatedTextFieldDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8365E6F418358BF9005CC386 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8365E70418358BF9005CC386 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8365E71418359341005CC386 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8365E72E18359341005CC386 /* Images.xcassets in Resources */,
+				8365E72018359341005CC386 /* InfoPlist.strings in Resources */,
+				8365E72918359341005CC386 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8365E6E218358BF9005CC386 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8365E71118358C1D005CC386 /* CCValidatedTextField.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8365E6F218358BF9005CC386 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8365E70618358BF9005CC386 /* ValidatedTextFieldTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8365E71218359341005CC386 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8365E72C18359341005CC386 /* ViewController.m in Sources */,
+				8365E72618359341005CC386 /* AppDelegate.m in Sources */,
+				8365E74A1835985F005CC386 /* CCValidatedTextField.m in Sources */,
+				8365E72218359341005CC386 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8365E6FD18358BF9005CC386 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8365E6E518358BF9005CC386 /* CCValidatedTextField */;
+			targetProxy = 8365E6FC18358BF9005CC386 /* PBXContainerItemProxy */;
+		};
+		8365E74818359431005CC386 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8365E6E518358BF9005CC386 /* CCValidatedTextField */;
+			targetProxy = 8365E74718359431005CC386 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8365E70218358BF9005CC386 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8365E70318358BF9005CC386 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		8365E71E18359341005CC386 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8365E71F18359341005CC386 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		8365E72718359341005CC386 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8365E72818359341005CC386 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8365E70718358BF9005CC386 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8365E70818358BF9005CC386 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8365E70A18358BF9005CC386 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/ValidatedTextField.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ValidatedTextField/CCValidatedTextField-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = CCValidatedTextField;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		8365E70B18358BF9005CC386 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/ValidatedTextField.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ValidatedTextField/CCValidatedTextField-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = CCValidatedTextField;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		8365E70D18358BF9005CC386 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ValidatedTextFieldDemo.app/ValidatedTextFieldDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ValidatedTextField/ValidatedTextField-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ValidatedTextFieldTests/CCValidatedTextFieldTests-Info.plist";
+				PRODUCT_NAME = CCValidatedTextFieldTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		8365E70E18358BF9005CC386 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ValidatedTextFieldDemo.app/ValidatedTextFieldDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ValidatedTextField/ValidatedTextField-Prefix.pch";
+				INFOPLIST_FILE = "ValidatedTextFieldTests/CCValidatedTextFieldTests-Info.plist";
+				PRODUCT_NAME = CCValidatedTextFieldTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+		8365E74218359341005CC386 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ValidatedTextFieldDemo/CCValidatedTextFieldDemo-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ValidatedTextFieldDemo/CCValidatedTextFieldDemo-Info.plist";
+				PRODUCT_NAME = CCValidatedTextFieldDemo;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		8365E74318359341005CC386 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ValidatedTextFieldDemo/CCValidatedTextFieldDemo-Prefix.pch";
+				INFOPLIST_FILE = "ValidatedTextFieldDemo/CCValidatedTextFieldDemo-Info.plist";
+				PRODUCT_NAME = CCValidatedTextFieldDemo;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8365E6E118358BF9005CC386 /* Build configuration list for PBXProject "CCValidatedTextField" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8365E70718358BF9005CC386 /* Debug */,
+				8365E70818358BF9005CC386 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8365E70918358BF9005CC386 /* Build configuration list for PBXNativeTarget "CCValidatedTextField" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8365E70A18358BF9005CC386 /* Debug */,
+				8365E70B18358BF9005CC386 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8365E70C18358BF9005CC386 /* Build configuration list for PBXNativeTarget "CCValidatedTextFieldTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8365E70D18358BF9005CC386 /* Debug */,
+				8365E70E18358BF9005CC386 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8365E74118359341005CC386 /* Build configuration list for PBXNativeTarget "CCValidatedTextFieldDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8365E74218359341005CC386 /* Debug */,
+				8365E74318359341005CC386 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8365E6DE18358BF9005CC386 /* Project object */;
+}
