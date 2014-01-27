@@ -18,18 +18,14 @@ Easy block based methods with the opportunity for full customization
         _emailStatus.image = [UIImage imageNamed:@"invalid"];
       }
     };
-    
-CCValidatedTextField also exposes the rest of UITextFieldDelegate's methods as blocks for convenience
 
-    @property (strong, nonatomic) ValidationBlock validationBlock;
-    @property (strong, nonatomic) PostValidationBlock postValidationBlock;
-    @property (strong, nonatomic) ShouldChangeCharactersInRangeWithReplacementStringBlock shouldChangeCharactersInRangeWithReplacementStringBlock;
-    @property (strong, nonatomic) ShouldBeginEditingBlock shouldBeginEditingBlock;
-    @property (strong, nonatomic) DidBeginEditingBlock didBeginEditingBlock;
-    @property (strong, nonatomic) ShouldEndEditingBlock shouldEndEditingBlock;
-    @property (strong, nonatomic) DidEndEditingBlock didEndEditingBlock;
-    @property (strong, nonatomic) ShouldClearBlock shouldClearBlock;
-    @property (strong, nonatomic) ShouldReturnBlock shouldReturnBlock;
+If you want to check if a textfield is currently valid (before submitting a form, for example), simply check CCTextField's .valid property
+
+    BOOL fieldIsInValidState = _emailField.valid;
+
+
 
 ##Installation##
-Cocoapods - in the process of adding a podspec
+Cocoapods
+
+    pod 'CCValidatedTextField', '~> 1.0.1'
