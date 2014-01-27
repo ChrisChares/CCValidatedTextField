@@ -24,18 +24,6 @@ If you want to check if a textfield is currently valid (before submitting a form
     BOOL fieldIsInValidState = _emailField.valid;
 
 
-CCValidatedTextField also exposes the rest of UITextFieldDelegate's methods as blocks for convenience
-
-    @property (strong, nonatomic) ValidationBlock validationBlock;
-    @property (strong, nonatomic) PostValidationBlock postValidationBlock;
-    @property (strong, nonatomic) ShouldChangeCharactersInRangeWithReplacementStringBlock shouldChangeCharactersInRangeWithReplacementStringBlock;
-    @property (strong, nonatomic) ShouldBeginEditingBlock shouldBeginEditingBlock;
-    @property (strong, nonatomic) DidBeginEditingBlock didBeginEditingBlock;
-    @property (strong, nonatomic) ShouldEndEditingBlock shouldEndEditingBlock;
-    @property (strong, nonatomic) DidEndEditingBlock didEndEditingBlock;
-    @property (strong, nonatomic) ShouldClearBlock shouldClearBlock;
-    @property (strong, nonatomic) ShouldReturnBlock shouldReturnBlock;
-
 
 ##Installation##
 Cocoapods

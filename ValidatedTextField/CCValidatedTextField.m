@@ -16,11 +16,25 @@
  */
 @interface DelegateRouter : NSObject<UITextFieldDelegate>
 @property CCValidatedTextField *textField;
+
 - (id)initWithValidatingTextField:(CCValidatedTextField *)textField;
+
 @end
 
 @interface CCValidatedTextField()
+
 @property (strong, nonatomic) DelegateRouter *delegateRouter;
+
+/**
+ * The forward delegate for this tableView
+ *
+ * This UITextField implements some methods of UITextFieldDelegate to assist in validation, however
+ * since we still want the user to be able to use a UITextField delegate, we use this to store the user's
+ * delegate and forward methods calls to it.
+ */
+@property (nonatomic, assign) id <UITextFieldDelegate> forwardDelegate;
+
+
 @end
 
 @implementation CCValidatedTextField
@@ -34,6 +48,7 @@
     }
     return self;
 }
+
 - (id)initWithCoder:(NSCoder *)aDecoder
 {
     self = [super initWithCoder:aDecoder];
@@ -42,18 +57,27 @@
     }
     return self;
 }
+
 - (id)init
 {
     self = [super init];
+  
     if ( self ) {
         [self setup];
     }
     return self;
 }
+
+/**
+ * Sets up the delegate to be the DelegateRouter
+ */
 - (void)setup
 {
+    // Init the delegate router with this text field
     _delegateRouter = [[DelegateRouter alloc] initWithValidatingTextField:self];
-    self.delegate = _delegateRouter;
+  
+    // Set the delegate on super to enable use of the forward delegate
+    [super setDelegate:_delegateRouter];
 }
 
 - (void)setValid:(BOOL)valid
@@ -63,10 +87,12 @@
         _postValidationBlock(_valid);
     }
 }
+
 - (BOOL)valid
 {
     return _valid;
 }
+
 - (void)dealloc
 {
     self.delegate = nil;
@@ -74,92 +100,91 @@
     _delegateRouter = nil;
     _validationBlock = nil;
     _postValidationBlock = nil;
-    _shouldChangeCharactersInRangeWithReplacementStringBlock = nil;
-    _shouldBeginEditingBlock = nil;
-    _didEndEditingBlock = nil;
-    _shouldEndEditingBlock = nil;
-    _didEndEditingBlock = nil;
-    _shouldClearBlock = nil;
-    _shouldReturnBlock = nil;
 }
+
+/**
+ * Override setting the delegate to enable use of both the DelegateRouter and
+ * a custom delegate designated by the user
+ */
+- (void)setDelegate:(id <UITextFieldDelegate>)delegate
+{
+  if (delegate == _delegateRouter) return;
+  
+  self.forwardDelegate = delegate;
+}
+
+/**
+ * Validates the current field against a given string
+ */
+- (void)validateAgainstString:(NSString *)string
+{
+  if ( self.validationBlock != nil ) {
+    self.valid = self.validationBlock(string);
+    if ( self.postValidationBlock != nil ) {
+      self.postValidationBlock(self.valid);
+    }
+  }
+}
+
+- (void)revalidate {
+  [self validateAgainstString:self.text];
+}
+
+
 @end
 
+
 @implementation DelegateRouter
-/*
- Managing Editing
- */
-- (BOOL)textFieldShouldBeginEditing:(UITextField *)textField
-{
-    if ( _textField.shouldBeginEditingBlock ) {
-        return _textField.shouldBeginEditingBlock();
-    } else {
-        return YES;
-    }
-}
-- (void)textFieldDidBeginEditing:(UITextField *)textField
-{
-    if ( _textField.didBeginEditingBlock ) {
-        _textField.didBeginEditingBlock();
-    }
-}
-- (BOOL)textFieldShouldEndEditing:(UITextField *)textField
-{
-    if ( _textField.shouldEndEditingBlock ) {
-        return _textField.shouldEndEditingBlock();
-    } else {
-        return YES;
-    }
-}
-- (void)textFieldDidEndEditing:(UITextField *)textField
-{
-    if ( _textField.didEndEditingBlock ) {
-        _textField.didEndEditingBlock();
-    }
-}
-/*
+
+/**
  Editing the Text Field's Text
  */
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string
 {
-    if ( _textField.validationBlock != nil ) {
-        _textField.valid = _textField.validationBlock([_textField.text stringByReplacingCharactersInRange:range withString:string]);
-        if ( _textField.postValidationBlock != nil ) {
-            _textField.postValidationBlock(_textField.valid);
-        }
-    }
-    
-    if ( _textField.shouldChangeCharactersInRangeWithReplacementStringBlock ) {
-        return _textField.shouldChangeCharactersInRangeWithReplacementStringBlock(range, string);
-    } else {
-        return YES;
-    }
-}
-- (BOOL)textFieldShouldClear:(UITextField *)textField
-{
-    if ( _textField.shouldClearBlock ) {
-        return _textField.shouldClearBlock();
-    } else {
-        return YES;
-    }
+  [_textField validateAgainstString:[_textField.text stringByReplacingCharactersInRange:range withString:string]];
+  
+  if ([_textField.forwardDelegate respondsToSelector:@selector(textField:shouldChangeCharactersInRange:replacementString:::)])
+  {
+    return [_textField.forwardDelegate textField:_textField shouldChangeCharactersInRange:range replacementString:string];
+  }
+  else
+  {
+    return YES;
+  }
 }
 
-- (BOOL)textFieldShouldReturn:(UITextField *)textField
-{
-    if ( _textField.shouldReturnBlock ) {
-        return _textField.shouldReturnBlock();
-    } else {
-        return YES;
-    }
-}
 - (id)initWithValidatingTextField:(CCValidatedTextField *)textField
 {
     self = [super init];
     _textField = textField;
     return self;
 }
+
 - (void)dealloc
 {
     self.textField = nil;
 }
+
+#pragma mark - Delegate Forwarding
+
+/**
+ * Returns YES if DelegateRouter or the ForwardDelegate respond to the selector
+ */
+- (BOOL)respondsToSelector:(SEL)aSelector
+{
+  return [super respondsToSelector:aSelector] || [_textField.forwardDelegate respondsToSelector:aSelector];
+}
+
+/**
+ * Pass off any methods not implemented by DelegateRouter to the delegate the user set on _textField
+ */
+- (id)forwardingTargetForSelector:(SEL)aSelector
+{
+  if ([super respondsToSelector:aSelector]) return self;
+  if ([_textField.forwardDelegate respondsToSelector:aSelector]) return _textField.forwardDelegate;
+  
+  return nil;
+}
+
 
 @end
